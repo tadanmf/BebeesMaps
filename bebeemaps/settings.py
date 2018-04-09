@@ -77,6 +77,14 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    },
+    'heroku': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dcjke658jshmg0',
+        'USER': 'sxydcfqewwyazv',
+        'PASSWORD': 'ff2eb3ec0f9fb59002dc717536a0635f0bf02929664fda0bbebef951b349ca60',
+        'HOST': 'ec2-54-204-21-226.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
