@@ -1,1 +1,1 @@
-web: gunicorn BebeesMaps.wsgi:application --log-file -
+web: gunicorn bebeemaps.wsgi:application --log-file -
