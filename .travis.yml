@@ -8,7 +8,7 @@
 
   # command to run tests
   script:
-    - pytest
+    - python manage.py syncdb --noinput
 
   # CI 실행 완료시 메일로 알람
   notifications:
