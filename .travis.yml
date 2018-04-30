@@ -1,7 +1,4 @@
-#   A basic travis.yml boilerplate for Django projects
-
 language: python
-
 python:
   - 3.6
 
@@ -15,13 +12,6 @@ before_install:
   - export PYTHONPATH=$HOME/builds/tadanmf/https://github.com/bebees/BebeesMaps.git
   - export PIP_USE_MIRRORS=true
 
+# command to install dependencies
 install:
   - pip install -r requirements.txt
-  - pip install django==$DJANGO --quiet
-  - pip install psycopg2 --quiet
-
-# CI 실행 완료시 메일로 알람
-notifications:
-  email:
-    recipients:
-      - tadanmf@gmail.com
