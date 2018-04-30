@@ -10,8 +10,7 @@
     - pip install -r requirements.txt
 
   # command to run tests
-  script:
-    - python manage.py syncdb --noinput
+  script:  make
 
   # CI 실행 완료시 메일로 알람
   notifications:
